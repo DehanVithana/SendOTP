@@ -32,10 +32,10 @@ export default async function handler(req, res) {
     const msg = {
       to: email,
       from: {
-        email: process.env.FROM_EMAIL || 'noreply@masholdings.com',
-        name: 'MAS Holdings'
+        email: process.env.FROM_EMAIL || 'dehanv@masholdings.com',
+        name: 'MAS Intimates'
       },
-      subject: 'Your OTP Code - MAS Holdings Login',
+      subject: 'Your OTP Code - MAS Intimates Login',
       html: `
         <!DOCTYPE html>
         <html>
