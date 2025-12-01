@@ -19,9 +19,9 @@ const OTPLoginSystem = () => {
   ];
 
   // SendGrid configuration - Replace these with your actual values
-  const SENDGRID_API_KEY = 'YOUR_SENDGRID_API_KEY'; // Replace with your SendGrid API key
-  const FROM_EMAIL = 'noreply@masholdings.com'; // Replace with your verified sender email
-  const FROM_NAME = 'MAS Holdings';
+  const SENDGRID_API_KEY = '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'; // Replace with your SendGrid API key
+  const FROM_EMAIL = 'dehanv@masholdings.com'; // Replace with your verified sender email
+  const FROM_NAME = 'MAS Intimates';
 
   const generateOTP = () => {
     return Math.floor(100000 + Math.random() * 900000).toString();
@@ -44,7 +44,7 @@ const OTPLoginSystem = () => {
                   name: userName
                 }
               ],
-              subject: 'Your OTP Code - MAS Holdings Login'
+              subject: 'Your OTP Code - MAS Intimates Login'
             }
           ],
           from: {
@@ -71,7 +71,7 @@ const OTPLoginSystem = () => {
                 <body>
                   <div class="container">
                     <div class="header">
-                      <h1>MAS Holdings</h1>
+                      <h1>MAS Intimates</h1>
                       <p>One-Time Password</p>
                     </div>
                     <div class="content">
@@ -87,7 +87,7 @@ const OTPLoginSystem = () => {
                         <li>If you didn't request this code, please ignore this email</li>
                       </ul>
                       <div class="footer">
-                        <p>This is an automated message from MAS Holdings. Please do not reply to this email.</p>
+                        <p>This is an automated message from MAS Intimates. Please do not reply to this email.</p>
                       </div>
                     </div>
                   </div>
